@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New form elements in HTML5</title>
+    <link rel="stylesheet" href="new-html-form-tags.css">
+</head>
+  <body>
+      <section>
+          <form action="" method="post" id="content">
+              <fieldset>
+                  <legend>Select</legend>
+                  <label for="mealChoice">Meal Choice:</label>
+                  <select name="meal_choice" id="mealChoice">
+                      <option value="no_preference">No preference</option>
+                      <option value="vegetarians">Vegetarians</option>
+                      <option value="vegan">Vegan</option>
+                      <option value="pescetarians">Pescetarians</option>
+                  </select>
+              </fieldset>
+
+              <fieldset>
+                  <legend>Datalist</legend>
+                  <label for="mealChoice2">Meal Choice:</label>
+                  <!-- List attribute on input and id on datalist element must match. This provides the link between the two-->
+                  <!-- datalist code here -->
+                  <input type="text" name="meal_choice2" id="mealChoice2" list="type_of_meal">
+                  <datalist id="type of meal">
+                      <option value="no_preference">No preference</option>
+                      <option value="vegetarians">Vegetarians</option>
+                      <option value="vegan">Vegan</option>
+                      <option value="pescetarians">Pescetarians</option>
+                  </datalist>
+              </fieldset>
+
+              <input type="submit" id="submit" value="Send your meal choice">
+          </form>
+      </section>
+  </body>
